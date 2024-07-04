@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @font-face {
   font-family: centuryGothic;
   src: url(fonts/century-gothic-font/CenturyGothic.ttf);
@@ -34,74 +36,73 @@
   /* font-family: "EB Garamond", serif; */
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
   /* font-family: 'Poppins',sans-serif; */
   font-weight: 700;
   color: rgb(35, 35, 85);
 }
-h6{
+h6 {
   font-size: 1.1rem;
-  color: rgb(24,24,49);
+  color: rgb(24, 24, 49);
 }
-.spann{
-  font-size: .9rem;
+.spann {
+  font-size: 0.9rem;
   color: #757373;
 }
 
 /* OtherPage Nav bar  start*/
-nav{
+nav {
   position: fixed;
   width: 100%;
-  background-color: rgba(163, 169, 240, 0.607);
+  background-color: #101c329e;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1vw 8vw;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0,0.15);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
   z-index: 999;
 }
-nav img{
+nav img {
   max-width: 45px;
   cursor: pointer;
 }
 
-nav .a_navigation{
+nav .a_navigation {
   display: flex;
 }
-#a_menu-btn{
+#a_menu-btn {
   width: 25px;
   height: 18px;
   display: none;
-
 }
-#a_menu-close{
+#a_menu-close {
   display: none;
 }
-nav .a_navigation ul{
+nav .a_navigation ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-nav .a_navigation ul li{
+nav .a_navigation ul li {
   list-style: none;
   margin-left: 30px;
 }
 
-nav .a_navigation ul li a{
+nav .a_navigation ul li a {
   text-decoration: none;
   font-family: centuryGothicb;
   font-weight: 400;
-  color: rgb(21, 21, 100);
+  color: white;
   transition: 0.3s ease;
 }
-nav .a_navigation ul li a:hover{
-  color: white;
+nav .a_navigation ul li a.active,
+nav .a_navigation ul li a:hover {
+  color: #fdc93b;
 }
 
 /* OtherPage Nav bar end  */
-
 
 /* //HomePage navbar  */
 header {
@@ -124,7 +125,7 @@ header .navigation {
 }
 header .navigation .navigation-items a {
   position: relative;
-  color: black;
+  color: white;
   font-size: 1em;
   font-family: centuryGothicb;
   font-weight: 500;
@@ -133,12 +134,12 @@ header .navigation .navigation-items a {
   transition: 0.3s ease;
 }
 header .navigation .navigation-items a:hover {
-  color: rgba(6, 12, 75, 0.84);
+  color: rgb(23, 7, 99);
 }
 header .navigation .navigation-items a:before {
   content: "";
   position: absolute;
-  background: rgba(6, 12, 75, 0.84);
+  background: rgb(23, 7, 99);
   width: 0%;
   height: 2px;
   bottom: 0;
@@ -147,8 +148,7 @@ header .navigation .navigation-items a:before {
 }
 header .navigation .navigation-items a:hover:before {
   width: 100%;
-} 
-
+}
 
 /* //landingpage content  */
 section {
@@ -192,6 +192,7 @@ section {
   letter-spacing: 5px;
   line-height: 75px;
   margin-bottom: 40px;
+  color: white;
 }
 .home .content h1 span {
   font-family: "EB Garamond", serif;
@@ -314,16 +315,18 @@ section {
     background-color: rgba(1, 1, 1, 0.5);
   }
   header .navigation .navigation-items a {
-    color: #222;
+    color: white;
     font-size: 1.2em;
     margin: 20px;
   }
   header .navigation .navigation-items a:before {
-    background: #222;
+    background: white;
     height: 2px;
   }
   header .navigation.active .navigation-items {
-    background: #fff;
+    /* background: #fff; */
+    background: rgba(17, 20, 104, 0.45);
+    backdrop-filter: blur(4.5px);
     width: 600px;
     max-width: 600px;
     margin: 20px;
@@ -354,49 +357,168 @@ section {
   }
 }
 
+/* //about page  */
+#about-home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url(WEBSITE_CONTENT/FRONT_PAGE/01Crop.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+#about-home .name_h2 {
+  color: #fff;
+  font-family: copperplateGothic;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+#about-home .a_h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1px;
+}
+#about-container {
+  display: flex;
+  align-items: center;
+  padding: 8vw 8vw 2vw 8vw;
+}
+#about-container .about-img {
+  width: 60%;
+  padding-right: 60px;
+}
+#about-container .about-img img {
+  width: 100%;
+}
+#about-container .about-text {
+  width: 40%;
+  padding: 60px;
+}
+#about-container .about-text h2 {
+  color: #293038;
+  padding-bottom: 15px;
+  font-family: centuryGothicb;
+}
+#about-container .about-text p {
+  color: #686f7a;
+  font-family: "EB Garamond", serif;
+  font-weight: 500px;
+}
+#about-container .about-text .about-fe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+#about-container .about-text .about-fe img {
+  width: 50px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+#about-container .about-text .about-fe .fe-text {
+  width: 90%;
+}
+#about-container .about-text .about-fe .fe-text h5 {
+  font-size: 16px;
+  font-family: "EB Garamond", serif;
+  color: #29303b;
+}
+#about-container .about-text .about-fe .fe-text p {
+  font-family: "Poppins", sans-serif;
+}
+
+.our-services {
+  margin-bottom: 50px;
+  /* width: 70%; */
+}
+
+.our-team{
+  margin-top: 50px;
+  /* width: 70%; */
+}
+
+.our-team h2,
+.our-services h2 {
+  margin-bottom: 20px;
+  font-family: centuryGothicb;
+  color: #101c32;
+  letter-spacing: 1px;  
+  text-align: center;
+}
+
+.our-team p,
+.our-services p {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #686f7a;
+  letter-spacing: 0.5px;
+}
+
+.our-team ul,
+.our-services ul{
+  padding-left: 50px;
+}
+.our-team li, .our-services li {
+  cursor: pointer;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3px;
+}
+.our-team li:hover,
+.our-services li:hover{
+  font-weight: 700;
+  color: #101c32;
+  transition: 0.3s ease;
+}
 
 /* Footer  */
-footer{
+footer {
   padding: 5vw;
-  background-color: #101C32;
+  background-color: #101c32;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-footer .footer-col{
+footer .footer-col {
   padding-bottom: 40px;
 }
-footer h3{
+footer h3 {
   color: white;
   font-weight: 600;
   font-family: "EB Garamond", serif;
   padding-bottom: 20px;
 }
-footer p{
+footer p {
   color: #7b838a;
 }
-footer .rights{
+footer .rights {
   color: white;
   font-family: copperplateGothic;
-
 }
-footer li{
+footer li {
   list-style: none;
   color: #7b838a;
   padding: 4px 0;
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
   transition: 0.3s ease;
 }
-footer li:hover{
+footer li:hover {
   color: white;
 }
-footer a{
+footer a {
   text-decoration: none;
 }
-footer .copyright{
+footer .copyright {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -404,43 +526,42 @@ footer .copyright{
   width: 100%;
   flex-wrap: wrap;
 }
-footer .copyright .pro-links{
+footer .copyright .pro-links {
   margin-top: 10px;
 }
-footer .copyright .pro-links i{
+footer .copyright .pro-links i {
   padding: 10px 13px;
   /* border: 1px solid rgb(21, 21, 100); */
   color: white;
   cursor: pointer;
   transition: 0.3s ease;
 }
-footer .copyright .pro-links i:hover{
+footer .copyright .pro-links i:hover {
   color: rgb(163, 169, 240);
   cursor: pointer;
 }
-footer .developer a{
+footer .developer a {
   color: rgba(163, 169, 240, 0.622);
   text-decoration: solid;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-@media (max-width: 769px){
-  nav{
+@media (max-width: 769px) {
+  nav {
     padding: 15px 20px;
   }
-  nav img{
+  nav img {
     width: 45px;
   }
-  #a_menu-btn{
+  #a_menu-btn {
     display: initial;
-  
   }
-  #a_menu-close{
+  #a_menu-close {
     display: initial;
     font-size: 1.6rem;
     color: #fff;
     padding: 30px 0 20px 20px;
   }
-  nav .a_navigation ul{
+  nav .a_navigation ul {
     position: absolute;
     top: 0;
     right: -220px;
@@ -455,15 +576,76 @@ footer .developer a{
     align-items: flex-start;
     transition: 0.3s ease;
   }
-  nav .a_navigation ul.active{
+  nav .a_navigation ul.active {
     right: 0;
   }
-  nav .a_navigation ul li{
+  nav .a_navigation ul li {
     padding: 20px 0 20px 40px;
     margin-left: 0;
   }
-  nav .a_navigation ul li a{
+  nav .a_navigation ul li a {
     color: #fff;
   }
+
+  /* about  */
+  #about-container {
+    padding: 8vw 4vw 2vw 4vw;
+  }
+  #about-container .about-img {
+    padding-right: 30px;
+  }
+  #about-container .about-text {
+    width: 60%;
+    padding: 0;
+  }
+  #about-home .name_h2 {
+    font-size: 2rem;
+  }
+  #about-home .a_h2 {
+    font-size: 2rem;
+  }
+  #about-container .about-img {
+    padding-right: 15px;
+  }
+  #about-home {
+    height: 50vh;
+  }
+}
+@media (max-width:475px){
+  h1{
+    font-size: 2rem;
+  }
+  /* About page for mobile  */
+
+  #about-home .name_h2 {
+    font-size: 1.4rem;
+  }
+  #about-home .a_h2 {
+    padding-top: 5px;
+    font-size: 1.4rem;
+  } 
+  #about-container{
+    flex-direction: column-reverse;
+  }
+  #about-container .about-img{
+    width: 100%;
+    padding: 0;
+  }
  
+  #about-container .about-img img {
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  #about-container .about-text{
+    width: 100%;
+  }
+  section {
+    padding: 20px 20px;
+  }
+  .our-team li,
+.our-services li{
+  font-weight: 500;
+  color: #101c32;
+}
 }
