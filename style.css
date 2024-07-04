@@ -30,11 +30,80 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: centuryGothic; */
-  font-weight: bold;
+  /* font-weight: bold; */
   /* font-family: "EB Garamond", serif; */
 }
 
-/* //navbar  */
+h1{
+  font-size: 2.5rem;
+  /* font-family: 'Poppins',sans-serif; */
+  font-weight: 700;
+  color: rgb(35, 35, 85);
+}
+h6{
+  font-size: 1.1rem;
+  color: rgb(24,24,49);
+}
+.spann{
+  font-size: .9rem;
+  color: #757373;
+}
+
+/* OtherPage Nav bar  start*/
+nav{
+  position: fixed;
+  width: 100%;
+  background-color: rgba(163, 169, 240, 0.607);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0,0.15);
+  z-index: 999;
+}
+nav img{
+  max-width: 45px;
+  cursor: pointer;
+}
+
+nav .a_navigation{
+  display: flex;
+}
+#a_menu-btn{
+  width: 25px;
+  height: 18px;
+  display: none;
+
+}
+#a_menu-close{
+  display: none;
+}
+nav .a_navigation ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .a_navigation ul li{
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav .a_navigation ul li a{
+  text-decoration: none;
+  font-family: centuryGothicb;
+  font-weight: 400;
+  color: rgb(21, 21, 100);
+  transition: 0.3s ease;
+}
+nav .a_navigation ul li a:hover{
+  color: white;
+}
+
+/* OtherPage Nav bar end  */
+
+
+/* //HomePage navbar  */
 header {
   z-index: 999;
   position: absolute;
@@ -55,7 +124,7 @@ header .navigation {
 }
 header .navigation .navigation-items a {
   position: relative;
-  color: white;
+  color: black;
   font-size: 1em;
   font-family: centuryGothicb;
   font-weight: 500;
@@ -78,11 +147,8 @@ header .navigation .navigation-items a:before {
 }
 header .navigation .navigation-items a:hover:before {
   width: 100%;
-}
-/* header .navigation .navigation-items a:hover{ */
-/* color: red; */
-/* font-family: centuryGothicb; */
-/* } */
+} 
+
 
 /* //landingpage content  */
 section {
@@ -286,4 +352,118 @@ section {
     /* height: 35px; */
     transition: 0.3s ease;
   }
+}
+
+
+/* Footer  */
+footer{
+  padding: 5vw;
+  background-color: #101C32;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+footer .footer-col{
+  padding-bottom: 40px;
+}
+footer h3{
+  color: white;
+  font-weight: 600;
+  font-family: "EB Garamond", serif;
+  padding-bottom: 20px;
+}
+footer p{
+  color: #7b838a;
+}
+footer .rights{
+  color: white;
+  font-family: copperplateGothic;
+
+}
+footer li{
+  list-style: none;
+  color: #7b838a;
+  padding: 4px 0;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+footer li:hover{
+  color: white;
+}
+footer a{
+  text-decoration: none;
+}
+footer .copyright{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+footer .copyright .pro-links{
+  margin-top: 10px;
+}
+footer .copyright .pro-links i{
+  padding: 10px 13px;
+  /* border: 1px solid rgb(21, 21, 100); */
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+footer .copyright .pro-links i:hover{
+  color: rgb(163, 169, 240);
+  cursor: pointer;
+}
+footer .developer a{
+  color: rgba(163, 169, 240, 0.622);
+  text-decoration: solid;
+  font-family: 'Poppins', sans-serif;
+}
+@media (max-width: 769px){
+  nav{
+    padding: 15px 20px;
+  }
+  nav img{
+    width: 45px;
+  }
+  #a_menu-btn{
+    display: initial;
+  
+  }
+  #a_menu-close{
+    display: initial;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 30px 0 20px 20px;
+  }
+  nav .a_navigation ul{
+    position: absolute;
+    top: 0;
+    right: -220px;
+    width: 220px;
+    height: 100vh;
+    background: rgba(17, 20, 104, 0.45);
+    backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.3s ease;
+  }
+  nav .a_navigation ul.active{
+    right: 0;
+  }
+  nav .a_navigation ul li{
+    padding: 20px 0 20px 40px;
+    margin-left: 0;
+  }
+  nav .a_navigation ul li a{
+    color: #fff;
+  }
+ 
 }
