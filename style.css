@@ -358,6 +358,7 @@ section {
 }
 
 /* //about page  */
+
 #about-home {
   background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
     url(WEBSITE_CONTENT/FRONT_PAGE/01Crop.jpg);
@@ -436,12 +437,10 @@ section {
 
 .our-services {
   margin-bottom: 50px;
-  /* width: 70%; */
 }
 
 .our-team{
   margin-top: 50px;
-  /* width: 70%; */
 }
 
 .our-team h2,
@@ -545,7 +544,7 @@ footer .developer a {
   text-decoration: solid;
   font-family: "Poppins", sans-serif;
 }
-@media (max-width: 769px) {
+@media (max-width: 811px) {
   nav {
     padding: 15px 20px;
   }
