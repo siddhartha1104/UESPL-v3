@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project</title>
-</head>
-<body>
-    <h1>Project</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - UESPL</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <a href="index.html"
+        ><img src="WEBSITE_CONTENT/UESPL.png" alt="UESPL Logo"
+      /></a>
+
+      <div class="a_navigation">
+        <ul>
+          <i id="a_menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img id="a_menu-btn" src="WEBSITE_CONTENT/menu-btn.png" alt="Menu" />
+      </div>
+    </nav>
+<h1>projects</h1>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>USHA Engineering Services (P) Ltd.</p>
+        <p>is a consulting company established</p>
+        <p>and registered as USHA Engineering</p>
+        <p>services in October 02, 1991 to provide</p>
+        <p>high quality professional services.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <li>+977-71-571632</li>
+        <li>+977-9857012648</li>
+        <li>+977-9857021648</li>
+        <li>info@uespl.com.np</li>
+        <li>uespl.org@gmail.com</li>
+      </div>
+      +
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <a href="index.html"><li>Home</li></a>
+        <a href="about.html"><li>About us</li></a>
+        <a href="contact.html"><li>Contact us</li></a>
+        <a href="services.html"><li>Services</li></a>
+        <a href="projects.html"><li>Projects</li></a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Our Services</h3>
+        <li>Architectural Design</li>
+        <li>Structural Design</li>
+        <li>Interior Design</li>
+        <li>Valuation</li>
+        <li>Retrofit Design</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>More Services</h3>
+        <li>IEE And EIA Consultation</li>
+        <li>Soli and Material Testing</li>
+        <li>Vastu Consultation</li>
+        <li>Surveying</li>
+        <li>Site Supervision</li>
+      </div>
+
+      <div class="copyright">
+        <p class="rights">
+            &#169; USHA Engineering Services (P). Ltd. All rights Reserved
+          </p>
+        <div class="pro-links">
+          <a
+            href="https://www.facebook.com/people/USHA-Engineering-Services-Pvt-Ltd/100062410158912/"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/usha.engineering/?utm_source=ig_web_button_share_sheet"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com/@uespl5056" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+
+        
+
+        <p class="developer">
+          Developed by:
+          <a href="https://siddharthapathak.com.np/" target="_blank"
+            >Siddhartha Pathak</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- JAvaScript  -->
+    <script>
+      // about page nav responivie
+      $("#a_menu-btn").click(function () {
+        $("nav .a_navigation ul").addClass("active");
+      });
+      $("#a_menu-close").click(function () {
+        $("nav .a_navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
 </html>
