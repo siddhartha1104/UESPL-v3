@@ -373,9 +373,23 @@ section {
   text-align: center;
   padding-top: 40px;
 }
-#about-services {
+#about-contact {
   background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
     url(WEBSITE_CONTENT/FRONT_PAGE/04.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+#about-projects {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url(WEBSITE_CONTENT/FRONT_PAGE/06.jpg);
   width: 100%;
   height: 60vh;
   background-size: cover;
@@ -393,7 +407,8 @@ section {
   font-size: 2.2rem;
   letter-spacing: 1px;
 }
-#about-services .name_h2 {
+#about-projects .name_h2,
+#about-contact .name_h2 {
   color: #fff;
   font-family: copperplateGothic;
   font-size: 2.2rem;
@@ -405,7 +420,8 @@ section {
   font-family: "EB Garamond", serif;
   letter-spacing: 1px;
 }
-#about-services .a_h2 {
+#about-projects .a_h2,
+#about-contact .a_h2 {
   color: #fff;
   font-size: 2.2rem;
   font-family: "EB Garamond", serif;
@@ -772,14 +788,16 @@ footer .developer a {
   #about-home .name_h2 {
     font-size: 2rem;
   }
-  #about-services .name_h2 {
+  #about-projects .name_h2,
+  #about-contact .name_h2 {
     font-size: 2rem;
   }
 
   #about-home .a_h2 {
     font-size: 2rem;
   }
-  #about-services .a_h2 {
+  #about-projects .a_h2,
+  #about-contact .a_h2 {
     font-size: 2rem;
   }
   #about-container .about-img {
@@ -788,7 +806,8 @@ footer .developer a {
   #about-home {
     height: 50vh;
   }
-  #about-services {
+  #about-projects,
+  #about-contact {
     height: 50vh;
   }
   
@@ -812,14 +831,16 @@ footer .developer a {
   #about-home .name_h2 {
     font-size: 1.4rem;
   }
-  #about-services .name_h2 {
+  #about-projects .name_h2,
+  #about-contact .name_h2 {
     font-size: 1.4rem;
   }
   #about-home .a_h2 {
     padding-top: 5px;
     font-size: 1.4rem;
   }
-  #about-services .a_h2 {
+  #about-projects .a_h2,
+  #about-contact .a_h2 {
     padding-top: 5px;
     font-size: 1.4rem;
   }
