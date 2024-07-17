@@ -548,25 +548,7 @@ section {
   color: #2c234d;
   font-size: 2.5rem;
   font-family: 'Poppins', sans-serif;
-  /* -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: transparent;
-  letter-spacing: 2px;
-  background-color: rgb(4,52,83);
-  background: linear-gradient(8deg, rgba(8,52,83,1) 0%, rgba(0,230,173,1) 41%, rgba(41,17,45,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative; */
 }
-/* .service h1:after{
-  content: " ";
-  position: absolute;
-  top: 100%;
-  left: 10%;
-  height: 4px;
-  width: 80%;
-  border-radius: 8px;
-  background-color: red;
-} */
 .cards{
   display: grid;
   grid-template-columns: repeat(3,1fr);
