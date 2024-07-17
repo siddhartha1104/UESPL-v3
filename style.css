@@ -530,6 +530,101 @@ section {
   transition: 0.3s ease;
 }
 
+/* Services  */
+.container{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
+.service-wrapper{
+  padding: 5% 8%;
+}
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service h1{
+  color: #2c234d;
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: transparent;
+  letter-spacing: 2px;
+  background-color: rgb(4,52,83);
+  background: linear-gradient(8deg, rgba(8,52,83,1) 0%, rgba(0,230,173,1) 41%, rgba(41,17,45,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative; */
+}
+/* .service h1:after{
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  height: 4px;
+  width: 80%;
+  border-radius: 8px;
+  background-color: red;
+} */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 80px;
+}
+.card{
+  height: 110px;
+  width: 370px;
+  background-color: #f7f6fa;
+  padding: 3% 8%;
+  border: 0.2px solid #f7f6fa;
+  border-radius: 8px;
+  transition: .6s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card:after{
+  content: "";
+  position: absolute;
+  top: 150%;
+  left: -200px;
+  width: 120%;
+  transform: rotate(50deg);
+  background-color: rgb(107, 128, 232);
+  height: 18px;
+  filter: blur(30px);
+  opacity: 0.5;
+  transition: 1s;
+
+}
+.card:hover:after{
+  width: 225%;
+  top: -100%;
+
+}
+.card h2{
+  color: #2c234d;
+  font-size: 20px;
+}
+.card p{
+  text-align: center;
+  margin-top: 10px;
+  color: #686875;
+  font-family: 'Poppins', sans-serif;
+  font-size: .8rem;
+}
+.card:hover{
+  background-color: transparent;
+  transform: translateY(-8px);
+  border-color: #c7c7ff;
+}
+
+
 /* Footer  */
 footer {
   padding: 5vw;
@@ -742,7 +837,7 @@ footer .developer a {
   height: 100%;
 }
 
-@media (max-width: 811px) {
+@media (max-width: 815px) {
   nav {
     padding: 15px 20px;
   }
@@ -830,6 +925,12 @@ footer .developer a {
   #contact .getin {
     width: 250px;
   }
+
+  /* //services page  */
+  .cards{
+    grid-template-columns: repeat(2,1fr);
+    /* margin-top: 30px; */
+  }
 }
 @media (max-width: 475px) {
   h1 {
@@ -905,4 +1006,19 @@ footer .developer a {
   #contact .form .form-row input {
     width: 100%;
   }
+
+  /* //services page  */
+  .cards{
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .service h1{
+    font-size: 2rem;
+  }
+  .card{
+    height: 110px;
+    width: 350px;
+  }
+  
 }
