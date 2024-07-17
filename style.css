@@ -402,27 +402,36 @@ section {
   text-align: center;
   padding-top: 40px;
 }
+
+#about_services {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url(WEBSITE_CONTENT/FRONT_PAGE/01.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#about_services .name_h2,
+#about-projects .name_h2,
+#about-contact .name_h2,
 #about-home .name_h2 {
   color: #fff;
   font-family: copperplateGothic;
   font-size: 2.2rem;
   letter-spacing: 1px;
 }
-#about-projects .name_h2,
-#about-contact .name_h2 {
-  color: #fff;
-  font-family: copperplateGothic;
-  font-size: 2.2rem;
-  letter-spacing: 1px;
-}
-#about-home .a_h2 {
-  color: #fff;
-  font-size: 2.2rem;
-  font-family: "EB Garamond", serif;
-  letter-spacing: 1px;
-}
+
+#about_services .a_h2,
 #about-projects .a_h2,
-#about-contact .a_h2 {
+#about-contact .a_h2,
+#about-home .a_h2 {
   color: #fff;
   font-size: 2.2rem;
   font-family: "EB Garamond", serif;
@@ -593,24 +602,24 @@ footer .developer a {
 }
 
 /* // contact us page  */
-#contact{
+#contact {
   padding: 8vw;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-#contact .getin{
+#contact .getin {
   width: 350px;
 }
-#contact .getin h2{
+#contact .getin h2 {
   color: #2c234d;
   font-size: 30px;
   font-weight: 800;
   font-family: "Poppins", sans-serif;
-  line-height: .8;
+  line-height: 0.8;
   margin-bottom: 16px;
 }
-#contact .getin p{
+#contact .getin p {
   color: #686875;
   font-family: "Poppins", sans-serif;
   line-height: 24px;
@@ -618,7 +627,7 @@ footer .developer a {
   padding-bottom: 25px;
   border-bottom: 1px solid #e5e4ed;
 }
-#contact .getin h3{
+#contact .getin h3 {
   color: #2c234d;
   font-size: 16px;
   font-weight: 600;
@@ -626,40 +635,40 @@ footer .developer a {
   line-height: 26px;
   margin-bottom: 15px;
 }
-#contact .getin .getin-details div{
+#contact .getin .getin-details div {
   display: flex;
 }
-#contact .getin .getin-details div .get{
+#contact .getin .getin-details div .get {
   font-size: 16px;
   line-height: 22px;
   color: #2c234d;
   margin-right: 20px;
 }
-#contact .getin .getin-details div p{
+#contact .getin .getin-details div p {
   font-size: 14px;
   border-bottom: none;
   line-height: 22px;
   margin-bottom: 15px;
 }
-#contact .getin .getin-details .pro-links i{
+#contact .getin .getin-details .pro-links i {
   color: #2c234d;
   font-size: 1.6em;
   margin-right: 15px;
   transition: 0.3s ease;
 }
-#contact .getin .getin-details .pro-links i:hover{
+#contact .getin .getin-details .pro-links i:hover {
   color: #5838fc;
   font-size: 1.8em;
   margin-right: 15px;
 }
 
-#contact .form{
+#contact .form {
   width: 60%;
   background: #f7f6fa;
   padding: 40px;
   border-radius: 10px;
 }
-#contact .form h4{
+#contact .form h4 {
   font-size: 24px;
   color: #2c234d;
   font-family: "Poppins", sans-serif;
@@ -676,19 +685,19 @@ footer .developer a {
   border-bottom: 1px solid #e5e4ed;
 } */
 
-#contact .form p{
+#contact .form p {
   color: #686875;
   line-height: 24px;
   font-family: copperplateGothic;
   padding-bottom: 25px;
 }
 
-#contact .form .form-row{
+#contact .form .form-row {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-#contact .form .form-row input{
+#contact .form .form-row input {
   width: 48%;
   font-size: 14px;
   font-weight: 400;
@@ -701,7 +710,7 @@ footer .developer a {
   margin-bottom: 20px;
 }
 #contact .form .form-col input,
-#contact .form .form-col textarea{
+#contact .form .form-col textarea {
   width: 100%;
   font-size: 14px;
   font-weight: 400;
@@ -713,10 +722,10 @@ footer .developer a {
   padding: 20px 30px;
   margin-bottom: 20px;
 }
-#contact .form button{
-  font-size: .9rem;
+#contact .form button {
+  font-size: 0.9rem;
   padding: 13px 25px;
-  background: rgb(21,21,100);
+  background: rgb(21, 21, 100);
   border-radius: 5px;
   outline: none;
   border: none;
@@ -724,11 +733,11 @@ footer .developer a {
   cursor: pointer;
   color: #fff;
 }
-#map{
+#map {
   width: 100%;
   height: 70vh;
 }
-#map iframe{
+#map iframe {
   width: 100%;
   height: 100%;
 }
@@ -786,40 +795,39 @@ footer .developer a {
     width: 60%;
     padding: 0;
   }
+
+  #about_services .name_h2,
+  #about-projects .name_h2,
+  #about-contact .name_h2,
   #about-home .name_h2 {
     font-size: 2rem;
   }
-  #about-projects .name_h2,
-  #about-contact .name_h2 {
-    font-size: 2rem;
-  }
 
-  #about-home .a_h2 {
-    font-size: 2rem;
-  }
+  #about_services .a_h2,
   #about-projects .a_h2,
-  #about-contact .a_h2 {
+  #about-contact .a_h2,
+  #about-home .a_h2 {
     font-size: 2rem;
   }
   #about-container .about-img {
     padding-right: 15px;
   }
+
+  #about_services,
+  #about-projects,
+  #about-contact,
   #about-home {
     height: 50vh;
   }
-  #about-projects,
-  #about-contact {
-    height: 50vh;
-  }
-  
+
   /* contact  */
-  #contact{
+  #contact {
     padding: 8vw 4vw;
     /* display: flex;
     justify-content: space-between;
     align-items: flex-start; */
   }
-  #contact .getin{
+  #contact .getin {
     width: 250px;
   }
 }
@@ -834,19 +842,17 @@ footer .developer a {
     margin-bottom: 100px;
   }
 
-  #about-home .name_h2 {
-    font-size: 1.4rem;
-  }
   #about-projects .name_h2,
-  #about-contact .name_h2 {
+  #about-contact .name_h2,
+  #about-home .name_h2,
+  #about_services .name_h2 {
     font-size: 1.4rem;
   }
-  #about-home .a_h2 {
-    padding-top: 5px;
-    font-size: 1.4rem;
-  }
+  
+  #about_services .a_h2,
   #about-projects .a_h2,
-  #about-contact .a_h2 {
+  #about-contact .a_h2,
+  #about-home .a_h2  {
     padding-top: 5px;
     font-size: 1.4rem;
   }
@@ -876,28 +882,27 @@ footer .developer a {
   }
 
   /* contact  */
-  #contact{
+  #contact {
     padding: 8vw 4vw;
     flex-direction: column;
     align-content: flex-start;
     justify-content: flex-start;
   }
-  #contact .getin{
+  #contact .getin {
     width: 100%;
     margin-bottom: 30px;
   }
-  #contact .form{
+  #contact .form {
     width: 100%;
     padding: 40px 30px;
   }
-  #contact .form .form-row{
+  #contact .form .form-row {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
   }
-  #contact .form .form-row input{
+  #contact .form .form-row input {
     width: 100%;
   }
-
 }
