@@ -654,6 +654,9 @@ section {
   cursor: pointer;
   user-select: none;
 }
+.project-filter a{
+  text-decoration: none;
+}
 .project-filter-active{
   background-color: #f0f0f0;
   color: #272727;

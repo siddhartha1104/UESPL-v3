@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - UESPL</title>
+    <title>Projects - UESPL</title>
 
     <!-- ========= Favicon ========== -->
     <link rel="icon" href="WEBSITE_CONTENT/UESPL.png" />
@@ -32,111 +32,133 @@
           <i id="a_menu-close" class="fas fa-times"></i>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="commercial.html">Projects</a></li>
+          <li><a class="active" href="commercial.html">Projects</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a class="active" href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <img id="a_menu-btn" src="WEBSITE_CONTENT/menu-btn.png" alt="Menu" />
       </div>
     </nav>
 
     <!-- bg image -->
-    <section id="about-contact">
+    <!-- <section id="about-projects">
       <h2 class="name_h2">USHA Engineering Services (P). Ltd.</h2>
-      <h2 class="a_h2">Contact Us</h2>
-    </section>
+      <h2 class="a_h2">Our Projects</h2>
+    </section> -->
 
-    <!-- //body section  -->
-    <section id="contact">
-      <div class="getin">
-        <h2>Get in touch</h2>
-        <p>Looking for help? Fill the form and start a new adventure.</p>
+    <!-- /// body section  -->
 
-        <div class="getin-details">
-          <h3>Office Loaction</h3>
-          <div>
-            <i class="fas fa-home get"></i>
-            <p>Sewa Path-05, Siddharthanaga, Rupandehi, Nepal</p>
-          </div>
-
-          <h3>Phone</h3>
-          <div>
-            <i class="fas fa-phone-alt get"></i>
-            <p>
-              <a href="tel:+97771571632">+977-71-571632</a>
-              <br />
-              <a href="tel:+9779857012648">+977-9857012648 </a>
-              <br />
-              <a href="tel:+9779857021648">+977-9857021648</a>
-            </p>
-          </div>
-
-          <h3>Email</h3>
-          <div>
-            <i class="fas fa-envelope-open-text get"></i>
-            <p>
-              <a href="mailto:uespl.org@gmail.com">uespl.org@gmail.com</a>
-              <br />
-              <a href="mailto:info@uespl.com.np">info@uespl.com.np</a>
-            </p>
-          </div>
-
-          <h3>Follow Us</h3>
-          <div class="pro-links">
-            <a
-              href="https://www.facebook.com/people/USHA-Engineering-Services-Pvt-Ltd/100062410158912/"
-              target="_blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/usha.engineering/?utm_source=ig_web_button_share_sheet"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://www.youtube.com/@uespl5056" target="_blank"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </div>
-        </div>
+    <section id="project">
+      <!-- heading  -->
+      <div class="project-heading">
+        <h3>Our Projects</h3>
+        <span>A display of years of hard work and outstanding results.</span>
       </div>
 
-      <div class="form">
-        <h4>Let's Connect</h4>
-        <p>USHA Engineering Services (P). Ltd.</p>
+      <!-- filter  -->
+      <ul class="project-filter">
+        <!-- <li class="list project-filter-active" data-filter="all">All</li> -->
+        <a href="commercial.html"><li class="list" data-filter="com">Commercial</li></a>
+        <a href="hospital.html"><li class="list" data-filter="hos">Hospital</li></a>
+        <a href="industrial.html"><li class="list" data-filter="ind">Industrial</li></a>
+        <a href="interior.html"><li class="list" data-filter="int">Interior</li></a>
+        <a href="religious.html"><li class="list project-filter-active" data-filter="reg">Religious</li></a>
+        <a href="residential.html"><li class="list" data-filter="res">Residential</li></a>
+      </ul>
 
-        <div class="form-row">
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Your Email" />
-        </div>
+      <!-- container  -->
+      <div class="project-container">
+        
+        
+        <!-- religious  -->
+        <a
+          href="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/HANUMAN MANDIR AT DHAKDAI.jpg"
+          class="project-box reg"
+        >
+          <img
+            src="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/HANUMAN MANDIR AT DHAKDAI.jpg"
+            alt="HANUMAN MANDIR AT DHAKDAI.jpg"
+          />
+        </a>
 
-        <div class="form-col">
-          <input type="text" placeholder="Subject" />
-        </div>
+        <!-- religious  -->
+        <a
+          href="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/JAMA MASJID AHLE HADEES AT BETHARI.jpg"
+          class="project-box reg"
+        >
+          <img
+            src="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/JAMA MASJID AHLE HADEES AT BETHARI.jpg"
+            alt="HANUMAN MANDIR AT DHAKDAI.jpg"
+          />
+        </a>
 
-        <div class="form-col">
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="8"
-            placeholder="How can we help?"
-          ></textarea>
-        </div>
+        <!-- religious  -->
+        <a
+          href="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/RADHA KRISHNA MANDIR AT BHAIRAHAWA.jpg"
+          class="project-box reg"
+        >
+          <img
+            src="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/RADHA KRISHNA MANDIR AT BHAIRAHAWA.jpg"
+            alt="HANUMAN MANDIR AT DHAKDAI.jpg"
+          />
+        </a>
 
-        <div class="form-col">
-          <button>Send Message</button>
-        </div>
+        <!-- religious  -->
+        <a
+          href="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/RAM JANAKI MANDIR AT RAMGRAM.jpg"
+          class="project-box reg"
+        >
+          <img
+            src="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/RAM JANAKI MANDIR AT RAMGRAM.jpg"
+            alt="HANUMAN MANDIR AT DHAKDAI.jpg"
+          />
+        </a>
+
+        <!-- religious  -->
+        <a
+          href="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/SHRI RAM JANAKI HANUMAN MANDIR - 2.jpg"
+          class="project-box reg"
+        >
+          <img
+            src="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/SHRI RAM JANAKI HANUMAN MANDIR - 2.jpg"
+            alt="HANUMAN MANDIR AT DHAKDAI.jpg"
+          />
+        </a>
+
+        <!-- religious  -->
+        <a
+          href="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/SHRI RAM JANAKI HANUMAN MANDIR - 3.jpg"
+          class="project-box reg"
+        >
+          <img
+            src="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/SHRI RAM JANAKI HANUMAN MANDIR - 3.jpg"
+            alt="HANUMAN MANDIR AT DHAKDAI.jpg"
+          />
+        </a>
+
+        <!-- religious  -->
+        <a
+          href="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/SHRI RAM JANAKI HANUMAN MANDIR.jpg"
+          class="project-box reg"
+        >
+          <img
+            src="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/SHRI RAM JANAKI HANUMAN MANDIR.jpg"
+            alt="HANUMAN MANDIR AT DHAKDAI.jpg"
+          />
+        </a>
+
+        <!-- religious  -->
+        <a
+          href="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/TEMPLE AT SEMRAHAWA.jpg"
+          class="project-box reg"
+        >
+          <img
+            src="WEBSITE_CONTENT/PROJECTS/RELIGIOUS/TEMPLE AT SEMRAHAWA.jpg"
+            alt="HANUMAN MANDIR AT DHAKDAI.jpg"
+          />
+        </a>
+
       </div>
-    </section>
-
-    <section id="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.832726056401!2d83.4532737!3d27.505577199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39969be0b379ceb7%3A0x9e21b1bbc4db8332!2sUsha%20engineering%20services%20(P)%20Ltd.!5e0!3m2!1sen!2snp!4v1720688124612!5m2!1sen!2snp"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
     </section>
 
     <!-- footer section -->
@@ -188,7 +210,7 @@
         <a href="mailto:info@uespl.com.np"><li>info@uespl.com.np</li></a>
         <a href="mailto:uespl.org@gmail.com"><li>uespl.org@gmail.com</li></a>
       </div>
-
+      +
       <div class="footer-col">
         <h3>Quick Links</h3>
         <a href="index.html"><li>Home</li></a>
@@ -255,5 +277,34 @@
         $("nav .a_navigation ul").removeClass("active");
       });
     </script>
+
+    <!--js for filter and project screen/body --->
+    <!-- <script src="js/JQuery.js"></script>
+
+    <script type="text/javascript">
+      $(document).on("click", ".project-filter li", function () {
+        $(this)
+          .addClass("project-filter-active")
+          .siblings()
+          .removeClass("project-filter-active");
+      });
+
+      // for-project/filter
+      $(document).ready(function () {
+        $(".list").click(function () {
+          const value = $(this).attr("data-filter");
+          if (value == "all") {
+            $(".project-box").show("1000");
+          } else {
+            $(".project-box")
+              .not("." + value)
+              .hide("1000");
+            $(".project-box")
+              .filter("." + value)
+              .show("1000");
+          }
+        });
+      });
+    </script> -->
   </body>
 </html>
